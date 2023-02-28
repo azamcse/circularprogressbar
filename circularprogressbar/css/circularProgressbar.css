@@ -1,0 +1,47 @@
+
+.wrapper{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px ;
+}
+
+
+
+.circular_progress{
+    width: 120px;
+    height: 120px;
+    background:conic-gradient( blue 10deg, #242323 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circular_progress::after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.progress_value{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
